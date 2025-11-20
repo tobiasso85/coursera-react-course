@@ -15,7 +15,7 @@ const internalLinks = [{
 function App() {
   return (
     <div className="App">
-        <Navbar internalLinks={internalLinks} externalLinks={externalLinks}></Navbar>
+      <Navbar internalLinks={internalLinks} externalLinks={externalLinks}></Navbar>
 
       <Footer></Footer>
     </div>
