@@ -1,0 +1,11 @@
+.footer {
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #111;
+}
+
+.footer > DIV {
+  text-align: center;
+  color: white;
+}

@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './comps/footer';
+import Navbar from './comps/navbar';
+
+
+const externalLinks = []
+const internalLinks = [{
+  href: "#projects",
+  name: "Projects"
+}, {
+  href: "#contact",
+  name: "Contact Me"
+}]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Navbar internalLinks={internalLinks} externalLinks={externalLinks}></Navbar>
+
+      <Footer></Footer>
     </div>
   );
 }

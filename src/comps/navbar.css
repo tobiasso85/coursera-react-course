@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #111;
+}
+
+.nav-left a{
+    float: left;
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-right a {
+    float: left;
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  opacity: 0.7;
+}
