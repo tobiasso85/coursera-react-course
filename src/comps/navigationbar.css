@@ -6,6 +6,21 @@
   background: #111;
 }
 
+.navbar ul {
+  list-style: none;
+  list-style-type: none;
+  padding-inline-start: 0;
+  display: inline-flex;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 600px) {
+.navbar ul {
+  display: block;
+}
+}
+
+
 .nav-left a{
     float: left;
   color: white;

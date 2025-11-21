@@ -1,5 +1,5 @@
 import logoSvg from "./logo.svg";
-import "./navbar.css"; // optional if you use the CSS below
+import "./navigationbar.css"; // optional if you use the CSS below
 
 
 const Navbar = (props) => {
@@ -18,8 +18,8 @@ const Navbar = (props) => {
             {
               internalLinks.map((e, i) => {
                 return (
-                  <li>
-                    <a key={i} href={e.href} className="internallink">{e.name}</a>
+                  <li key={i} >
+                    <a href={e.href} className="internallink">{e.name}</a>
                   </li>
                 )
               })

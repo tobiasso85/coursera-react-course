@@ -4,3 +4,39 @@
   margin-bottom: 30px;
   grid-gap: 10;
 }
+
+.thegrid-1 {
+  grid-template-columns: auto;
+}
+
+.thegrid-2 {
+  grid-template-columns: auto auto;
+}
+
+.thegrid-3 {
+  grid-template-columns: auto auto auto;
+}
+
+.thegrid-4 {
+  grid-template-columns: auto auto auto auto;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 600px) {
+
+  .thegrid-1 {
+    grid-template-columns: auto;
+  }
+  
+  .thegrid-2 {
+    grid-template-columns: auto;
+  }
+  
+  .thegrid-3 {
+    grid-template-columns: auto;
+  }
+  
+  .thegrid-4 {
+    grid-template-columns: auto auto;
+  }
+}
+
