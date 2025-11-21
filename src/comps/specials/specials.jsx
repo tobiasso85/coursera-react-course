@@ -1,3 +1,4 @@
+import ButtonLink from "../buttonLink";
 import Grid from "../gridComp";
 import Card from "./card";
 import "./specials.css";
@@ -11,7 +12,10 @@ const Specials = () => {
 
             <Grid>
                 <h2 style={{ "textAlign": "left" }}>Specials</h2>
-                <div style={{ "textAlign": "right" }}><button>Online Menu</button></div>
+                <div style={{ "textAlign": "right" }}>
+                  <ButtonLink name="Online Menu" href="/menu" />
+
+                  </div>
             </Grid>
         </div>
 

@@ -1,0 +1,22 @@
+.thebtn {
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-line: none;
+    background-color: #ddd;
+}
+
+.thebtn:hover {
+    background-color: #ccc;
+
+}
+
+.buttonLink {
+    text-decoration: none;
+    color: black;
+}

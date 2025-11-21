@@ -1,3 +1,4 @@
+import ButtonLink from "./buttonLink";
 import Grid from "./gridComp";
 import "./hero.css";
 
@@ -12,7 +13,8 @@ const Hero = () => {
                     <h3>Chicago</h3>
                     <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
                     <div>
-                        <button>Reserve a Table</button>
+                        <ButtonLink name="Reserve a Table" href="/reservations" />
+
                     </div>
                 </article>
             </div>
