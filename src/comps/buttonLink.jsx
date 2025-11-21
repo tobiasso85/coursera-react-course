@@ -3,16 +3,14 @@ import "./buttonLink.css";
 
 
 const ButtonLink = (props) => {
-    const {name, href} = props;
+    const { name, href } = props;
 
-  return (
-    <>
-        <div className="thebtn">
+    return (
+        <>
 
-      <Link to={href} className="buttonLink" >{name}</Link>
-        </div>
-    </>
-  );
+            <Link to={href} className="buttonLink thebtn" >{name}</Link>
+        </>
+    );
 };
 
 export default ButtonLink;

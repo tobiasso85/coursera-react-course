@@ -1,15 +1,41 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Karla, sans-serif;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  color: #495E57;
+}
+
+a {
+  text-decoration: none;
+  color: #495E57;
+}
+
+h1, h2 {
+  line-height: 1;
+  font-family: "Markazi Text";
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
 }
 
 .themain {
-  margin-left: 100px;
-  margin-right: 100px;
+  max-width: 61.625rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
 }
 

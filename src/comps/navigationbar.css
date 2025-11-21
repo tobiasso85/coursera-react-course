@@ -3,7 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
-  background: #111;
+  min-height: 6.25rem;
+  background-color: #F4CE14;
 }
 
 .navbar ul {
@@ -32,7 +33,6 @@
 
 .nav-right a {
     float: left;
-  color: white;
   text-decoration: none;
   margin: 0 12px;
   font-weight: 500;

@@ -52,7 +52,7 @@ const Navbar = () => {
               internalLinks.map((e, i) => {
                 return (
                   <li key={i} >
-                    <Link to={e.href} className="nav-item">{e.name}</Link>
+                    <Link to={e.href} className="navItem">{e.name}</Link>
                   </li>
                 )
               })

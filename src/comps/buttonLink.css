@@ -1,22 +1,27 @@
 .thebtn {
-    border-radius: 3px;
-    border: 1px solid black;
-    padding: 2px;
-    padding-left: 6px;
-    padding-right: 6px;
+
     text-align: center;
     display: inline-block;
-    text-decoration: none;
-    text-decoration-line: none;
-    background-color: #ddd;
+
+      padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: #F4CE14;
+  color: #495E57;
+  font-weight: bold;
+  border: 0.1875rem solid #F4CE14;
 }
 
 .thebtn:hover {
-    background-color: #ccc;
-
+background-color: #495E57;
+  border-color: #495E57;
+  color: #FFFFFF;
+  
 }
 
 .buttonLink {
     text-decoration: none;
-    color: black;
+}
+.buttonLink:hover {
+    text-decoration: none;
+    color: #FFFFFF;
 }
