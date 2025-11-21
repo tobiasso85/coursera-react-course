@@ -3,9 +3,17 @@
   align-items: center;
   padding: 12px 24px;
   background: #111;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: left;
 }
 
 .footer > DIV {
-  text-align: center;
   color: white;
+}
+
+.footer ul {
+  list-style-type: none;
+  list-style: none;
+  padding-inline-start: 0;
 }

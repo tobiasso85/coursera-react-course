@@ -1,32 +1,20 @@
+import logoSvg from "./logo.svg";
 import "./navbar.css"; // optional if you use the CSS below
 
 
 const Navbar = (props) => {
 
-  const { externalLinks, internalLinks } = props;
+  const { internalLinks } = props;
   return (
     <header>
 
       <nav className="navbar">
         <div className="nav-left">
-          <ul>
-
-            {externalLinks.map((e, index) => {
-
-              return (
-
-                <li>
-                  <a key={index} href={e.href} target="_blank" rel="noreferrer">{e.logo}</a>
-
-                </li>
-              )
-            })}
-          </ul>
+          <img src={logoSvg} alt="logo"></img>
         </div>
 
         <div className="nav-right">
           <ul>
-
             {
               internalLinks.map((e, i) => {
                 return (
