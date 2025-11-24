@@ -34,6 +34,7 @@ h2 {
 .themain {
   max-width: 61.625rem;
   width: 90%;
+  min-height: calc(100vh - 394px);
   margin-left: auto;
   margin-right: auto;
   text-align: left;

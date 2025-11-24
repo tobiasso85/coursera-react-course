@@ -39,6 +39,7 @@ const internalLinks = [{
 const Navbar = () => {
 
   return (
+    <>
     <header>
 
       <nav className="navbar">
@@ -61,13 +62,17 @@ const Navbar = () => {
         </div>
       </nav>
 
+    </header>
+      <main className="themain">
+
       <Routes>
         {internalLinks.map((e, i) => {
           const Comp = e.comp;
           return <Route key={i} path={e.href} element={<Comp></Comp>}></Route>
         })}
       </Routes>
-    </header>
+        </main>
+        </>
   );
 };
 

@@ -4,21 +4,22 @@ import Specials from "../comps/specials/specials";
 import Testimonials from "../comps/testimonials";
 
 function Home() {
-  return (
-          <main className='themain'>
-        {/* top little lemon */}
-        <Hero></Hero>
-        {/* specials */}
-        <Specials></Specials>
-        {/* testimonials */}
-        <Testimonials></Testimonials>
-        {/* description */}
+    return (
+        <>
+            {/* top little lemon */}
+            <Hero></Hero>
+            {/* specials */}
+            <Specials></Specials>
+            {/* testimonials */}
+            <Testimonials></Testimonials>
+            {/* description */}
 
-       <Overview></Overview>
+            <Overview></Overview>
+        </>
 
 
 
-      </main>
-  )}
+    )
+}
 
 export default Home;
