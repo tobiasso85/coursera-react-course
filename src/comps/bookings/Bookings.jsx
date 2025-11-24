@@ -1,13 +1,19 @@
 import { useReducer } from "react";
+import { useNavigate } from "react-router-dom";
+import { fetchAPI } from "../../coursera/api";
 import BookingForm from "./bookingForm";
 
 function Bookings() {
-    const initializeTimes = () => ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
 
+    const navigate = useNavigate();
 
     const updateTimes = (availableTimes, date) => {
-        return availableTimes;
+        const response = fetchAPI(new Date(date));
+        return (response.length !== 0) ? response : availableTimes;
     };
+
+    const initializeTimes = initialAvailableTimes =>
+        [...initialAvailableTimes, ...fetchAPI(new Date())];
 
     const [
         availableTimes,
@@ -17,7 +23,9 @@ function Bookings() {
     return (
         <>
             <h1>Book a table</h1>
-            <BookingForm availableTimes={availableTimes} onDateChange={onDateChange}></BookingForm>
+            <BookingForm availableTimes={availableTimes} onDateChange={onDateChange} onSubmit={() => {
+                navigate("/confirmed");
+            }}></BookingForm>
         </>
     )
 }

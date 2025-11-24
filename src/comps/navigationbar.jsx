@@ -4,6 +4,7 @@ import Login from "../pages/login";
 import Menu from "../pages/menu";
 import OrderOnline from "../pages/orderOnline";
 import Reservations from "../pages/reservations";
+import ConfirmedBooking from "./bookings/confirmedBooking";
 import logoSvg from "./logo.svg";
 import "./navigationbar.css"; // optional if you use the CSS below
 
@@ -34,6 +35,10 @@ const internalLinks = [{
   href: "/login",
   name: "Login",
   comp: Login
+}, {
+  href: "/confirmed",
+  name: "",
+  comp: ConfirmedBooking
 }]
 
 const Navbar = () => {
@@ -50,7 +55,7 @@ const Navbar = () => {
         <div className="nav-right">
           <ul>
             {
-              internalLinks.map((e, i) => {
+              internalLinks.filter(x => x.name).map((e, i) => {
                 return (
                   <li key={i} >
                     <Link to={e.href} className="navItem">{e.name}</Link>

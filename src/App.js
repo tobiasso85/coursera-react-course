@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Navbar></Navbar>
-      <Footer></Footer>
+        <Navbar></Navbar>
+        <Footer></Footer>
       </BrowserRouter>
     </div>
   );
