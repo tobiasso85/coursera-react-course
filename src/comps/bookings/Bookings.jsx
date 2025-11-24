@@ -23,7 +23,9 @@ function Bookings() {
     return (
         <>
             <h1>Book a table</h1>
-            <BookingForm availableTimes={availableTimes} onDateChange={onDateChange} onSubmit={() => {
+            <BookingForm availableTimes={availableTimes} onDateChange={onDateChange} onSubmit={(formData) => {
+                // store in localstorage for confirmation page
+                localStorage.setItem("bookingConfirmed", JSON.stringify({...formData }));
                 navigate("/confirmed");
             }}></BookingForm>
         </>

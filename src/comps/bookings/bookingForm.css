@@ -3,3 +3,34 @@
    max-width: 200px;
    gap: 20px
 }
+
+.submitBtn {
+  text-align: center;
+  display: inline-block;
+
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: #f4ce14;
+  color: #495e57;
+  font-weight: bold;
+  border: 0.1875rem solid #f4ce14;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: #495e57;
+  border-color: #495e57;
+  color: #ffffff;
+}
+
+.submitBtn:disabled {
+    background-color: #EDEFEE;
+    border-color: #EDEFEE;
+    color: #ADAFAE;
+    cursor: not-allowed;
+  }
+
+  p.errorMessage {
+    font-size: 0.95rem;
+    color: red;
+  }
