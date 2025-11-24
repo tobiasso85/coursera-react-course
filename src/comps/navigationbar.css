@@ -4,7 +4,8 @@
   align-items: center;
   padding: 12px 24px;
   min-height: 6.25rem;
-  background-color: #F4CE14;
+  background-color: #FFF;
+  /* background-color: #F4CE14; */
 }
 
 .navbar ul {

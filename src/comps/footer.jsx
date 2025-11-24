@@ -1,4 +1,5 @@
 import "./footer.css"; // optional if you use the CSS below
+import footerimg from "./footer.png";
 import Grid from "./gridComp";
 
 
@@ -19,7 +20,7 @@ const Footer = () => {
     <footer className="footer">
       <Grid>
         <div>
-          <div style={{ width: "80px", height: "200px", backgroundColor: "gray" }}></div>
+          <img src={footerimg} alt="footer img" height="150px"/>
         </div>
         <div>
           {footerColumn("Document Navigation", [{

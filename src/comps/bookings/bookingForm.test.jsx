@@ -36,4 +36,49 @@ describe('BookingForm', () => {
     fireEvent.click(submitButton);
     expect(onSubmit).toHaveBeenCalled();
   });
+
+  it('disables submit button if date is empty', () => {
+    render(<BookingForm availableTimes={availableTimes} onDateChange={() => {}} onSubmit={() => {}} />);
+    const dateInput = screen.getByLabelText(/choose date/i);
+    fireEvent.change(dateInput, { target: { value: '' } });
+    const submitButton = screen.getByRole('button', { name: /submit reservation/i });
+    expect(submitButton).toBeDisabled();
+  });
+
+  it('shows error message for invalid date', () => {
+    render(<BookingForm availableTimes={availableTimes} onDateChange={() => {}} onSubmit={() => {}} />);
+    const dateInput = screen.getByLabelText(/choose date/i);
+    fireEvent.change(dateInput, { target: { value: '2000-01-01' } });
+    expect(screen.getByText(/please enter a valid date in the future/i)).toBeInTheDocument();
+  });
+
+  it('disables submit button if guests is less than 1', () => {
+    render(<BookingForm availableTimes={availableTimes} onDateChange={() => {}} onSubmit={() => {}} />);
+    const guestsInput = screen.getByLabelText(/number of guests/i);
+    fireEvent.change(guestsInput, { target: { value: '0' } });
+    const submitButton = screen.getByRole('button', { name: /submit reservation/i });
+    expect(submitButton).toBeDisabled();
+  });
+
+  it('shows error message for NaN guests', () => {
+    render(<BookingForm availableTimes={availableTimes} onDateChange={() => {}} onSubmit={() => {}} />);
+    const guestsInput = screen.getByLabelText(/number of guests/i);
+    fireEvent.change(guestsInput, { target: { value: '' } });
+    expect(screen.getByText(/please enter a valid date in the future/i)).toBeInTheDocument();
+  });
+
+  it('disables submit button if occasion is invalid', () => {
+    render(<BookingForm availableTimes={availableTimes} onDateChange={() => {}} onSubmit={() => {}} />);
+    const occasionSelect = screen.getByLabelText(/choose occasion/i);
+    fireEvent.change(occasionSelect, { target: { value: 'InvalidOccasion' } });
+    const submitButton = screen.getByRole('button', { name: /submit reservation/i });
+    expect(submitButton).toBeDisabled();
+  });
+
+  it('shows error message for invalid occasion', () => {
+    render(<BookingForm availableTimes={availableTimes} onDateChange={() => {}} onSubmit={() => {}} />);
+    const occasionSelect = screen.getByLabelText(/choose occasion/i);
+    fireEvent.change(occasionSelect, { target: { value: 'InvalidOccasion' } });
+    expect(screen.getByText(/please enter a valid time/i)).toBeInTheDocument();
+  });
 });
