@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Little Lemon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Little Lemon Restaurant React Application created as part of the Coursera React Course.
+
+It contains the following features:
+
+- Responsive Navigation Bar with Hamburger Menu
+- Hero Section
+- About Section
+- Specials Section
+- Testimonials Section
+- Booking Section with Form Validation
+- Footer Section
 
 ## Available Scripts
 
@@ -41,7 +51,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more in the [Create Little Lemon documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
