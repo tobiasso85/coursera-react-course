@@ -22,8 +22,8 @@ const Hero = () => {
                     </div>
                 </article>
             </div>
-            <div>
-                <img src={heroImg} alt="restaurant photo Image"  height={300}/>
+            <div className="heroImg">
+                <img src={heroImg} alt="restaurant"/>
                 
             </div>
         </Grid>

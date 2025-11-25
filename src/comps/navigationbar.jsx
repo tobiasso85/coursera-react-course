@@ -20,39 +20,40 @@ const Navbar = ({ internalLinks }) => {
             <img src={logoSvg} alt="logo"></img>
           </div>
 
-          <button 
-          className="hamburger" 
-          type="button" 
-          onClick={() => setExpanded(!expanded)}
-        >
-          {expanded ?
-            <div>
-              <div className="bar1x"></div>
-              <div className="bar2x"></div>
-              <div className="bar3x"></div>
-            </div> : 
-            <div>
-              <div className="bar1"></div>
-              <div className="bar2"></div>
-              <div className="bar3"></div>
-            </div>
-}
-        </button>
+          <button
+            className="hamburger"
+            type="button"
+            onClick={() => setExpanded(!expanded)}
+          >
+            {expanded ?
+              <div>
+                <div className="bar1x"></div>
+                <div className="bar2x"></div>
+                <div className="bar3x"></div>
+              </div> :
+              <div>
+                <div className="bar1"></div>
+                <div className="bar2"></div>
+                <div className="bar3"></div>
+              </div>
+            }
+          </button>
 
-          <div className={expanded ? 'navbarlinks expanded' : 'navbarlinks'} 
-          onClick={() => setExpanded(!expanded)}>
-            <ul>
-              {
-                internalLinks.filter(x => x.name).map((e, i) => {
-                  return (
-                    <li key={i} >
-                      <Link to={e.href} className="navItem">{e.name}</Link>
-                    </li>
-                  )
-                })
-              }
-            </ul>
-          </div>
+
+            <div className={expanded ? 'navbarlinks expanded' : 'navbarlinkshidden'}
+              onClick={() => setExpanded(!expanded)}>
+              <ul>
+                {
+                  internalLinks.filter(x => x.name).map((e, i) => {
+                    return (
+                      <li key={i} >
+                        <Link to={e.href} className="navItem">{e.name}</Link>
+                      </li>
+                    )
+                  })
+                }
+              </ul>
+            </div>
         </nav>
 
       </header>
