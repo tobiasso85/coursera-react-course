@@ -22,6 +22,5 @@ export const fetchAPI = function(date) {
     return result;
 };
 export const submitAPI = function(formData) {
-    // TODO use localStorage
     return true;
 };
