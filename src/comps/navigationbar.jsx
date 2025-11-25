@@ -40,7 +40,7 @@ const Navbar = ({ internalLinks }) => {
           </button>
 
 
-            <div className={expanded ? 'navbarlinks expanded' : 'navbarlinkshidden'}
+            <div className={expanded ? 'navbarlinks expanded' : 'navbarlinkshidden nav-right'}
               onClick={() => setExpanded(!expanded)}>
               <ul>
                 {
